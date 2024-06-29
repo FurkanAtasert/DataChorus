@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>DataChorus | Home</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename='Gif/DC.png') }}" rel="icon" />
+    <link
+      href="{{ url_for('static', filename='Gif/DC.png') }}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <!-- Template Main CSS File -->
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div
+        class="container d-flex align-items-center justify-content-lg-between"
+      >
+        <h1 class="logo me-auto me-lg-0">
+          <a href="/">Data<span>Chorus</span></a>
+        </h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="{{ url_for('index') }}"
+                >Home</a
+              >
+            </li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav-link scrollto" href="{{ url_for('analysis') }}"
+                >Analysis</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <a href="#about" class="get-started-btn scrollto">Get Started</a>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          <div class="col-xl-6 col-lg-8">
+            <video width="auto" height="auto" max-width="600px" max-height="600px" autoplay muted>
+              <source
+                src="{{ url_for('static', filename='Gif/Datachorus.mp4') }}"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h1>Step into the World of Analysis</h1>
+            <h2>Welcome!<br />.<br />
+              We are here for you as statisticians
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="row gy-4 mt-5 justify-content-center"
+          data-aos="zoom-in"
+          data-aos-delay="250"
+        >
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-store-line"></i>
+              <h3><a href="">Feedback</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line"></i>
+              <h3><a href="">Go the Analyze Page</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-calendar-todo-line"></i>
+              <h3><a href="">Learn to Analysis Step</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <img
+                src="{{ url_for('static', filename='img/about.jpg') }}"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <h1>What is statistical analysis?</h1>
+              <p class="fst-italic">
+                Statistical analysis is a mathematical method of collecting,
+                reviewing, and interpreting data. Researchers use statistical
+                analysis to understand large amounts of data and make
+                conclusions based on these data sets. It encompasses a variety
+                of techniques that involve the collection, presentation,
+                description, analysis, and interpretation of data.
+              </p>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <h5>Predictive Analysis:</h5>
+                  Statistical analysis can be used to predict future trends
+                  based on historical data. This can be useful in many fields
+                  such as economics, weather forecasting, and business planning.
+                </li>
+                <br />
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <h5>Decision Making:</h5>
+                  Data-driven decision making is crucial in many industries. By
+                  performing statistical analysis, decision-makers can have a
+                  clearer understanding of the risks and benefits involved in a
+                  particular decision.
+                </li>
+                <br />
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <h5>Identify Patterns and Trends:</h5>
+                  Statistical analysis can help identify patterns and trends
+                  within a data set. This can be particularly useful in market
+                  research, where understanding consumer behavior patterns can
+                  lead to more effective marketing strategies.
+                </li>
+                <br />
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <h5>Testing Hypotheses:</h5>
+                  In scientific research, statistical analysis is often used to
+                  test hypotheses and validate experimental results. This helps
+                  ensure the validity of the research.
+                </li>
+                <br />
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <h5>Quality Control and Improvement:</h5>
+                  In industries such as manufacturing, statistical analysis can
+                  be used for quality assurance. By analyzing data from the
+                  manufacturing process, companies can identify and correct
+                  issues before they become bigger problems.
+                </li>
+                <br />
+              </ul>
+              <p>
+                Overall, statistical analysis provides a way to make sense of
+                large amounts of data, draw conclusions, and make decisions
+                based on those conclusions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container" data-aos="zoom-in">
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <a href="https://www.omu.edu.tr/tr"
+                  ><img
+                    src="{{ url_for('static', filename='Gif/omülogo.PNG') }}"
+                    class="img-fluid"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Clients Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="image col-lg-6"
+              style="background-image: url('static/img/features.jpg')"
+              data-aos="fade-right"
+            ></div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <div
+                class="icon-box mt-5 mt-lg-0"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Defining the Research Question:</h4>
+                <p>
+                  The first step is usually to define the purpose of the
+                  analysis. This can help you understand what kind of data you
+                  need to achieve a certain result.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Data Collection:</h4>
+                <p>
+                  Data collection is a crucial part of statistical analysis.
+                  Data can be gathered from surveys, experiments, observations,
+                  and various other sources.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Data Preparation:</h4>
+                <p>
+                  The collected data needs to be organized, cleaned, and
+                  processed. This stage handles missing data, errors, and
+                  inconsistencies.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Data Analysis:</h4>
+                <p>
+                  This is the stage where the data is examined using statistical
+                  techniques. These techniques can include descriptive
+                  statistics, correlation analyses, regression analyses,
+                  analysis of variance, and many more.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Interpreting the Results:</h4>
+                <p>
+                  The step of interpreting the results and presenting them in a
+                  meaningful way is based on the analysis outcomes. This stage
+                  usually includes graphical representations, tables, and
+                  reports of the data.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Sharing the Results:</h4>
+                <p>
+                  The results are usually shared in a report or presentation.
+                  This stage generally includes the information necessary to
+                  understand the analysis outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>Check our Services</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Hypotheses Analysis</a></h4>
+                <p>asdasdasda</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Medical Analysis</a></h4>
+                <p>Dasdasd</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">System Stability</a></h4>
+                <p>asdasd</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Company Analysis</a></h4>
+                <p>asdas</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <h4><a href="">How to Make Analysis</a></h4>
+                <p>Video</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Learn to Programmer</a></h4>
+                <p>asdasd</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Call To Action</h3>
+            <p>
+              Data speaks louder than words - Let our statistical analysis program do the talking for you !
+            </p>
+            <a class="cta-btn" href="#">Call To Action</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row no-gutters">
+            <div
+              class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            ></div>
+            <div
+              class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <div class="content d-flex flex-column justify-content-center">
+                <h3>Feedback</h3>
+                <p>
+                  Our Achievements
+                </p>
+                <div class="row">
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-emoji-smile"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="65"
+                        data-purecounter-duration="2"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Happy Clients</strong> bring us joy and satisfaction with their own unique contributions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-journal-richtext"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="85"
+                        data-purecounter-duration="2"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Projects</strong> In each project, our aim has been to focus on our clients' needs and provide unique solutions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-clock"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="35"
+                        data-purecounter-duration="4"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Years of experience</strong> We bring years of experience to the table, allowing us to tackle projects with a deep understanding and expertise.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-award"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="20"
+                        data-purecounter-duration="4"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Awards</strong> We can proudly say that our efforts have been recognized and celebrated in various fields. These awards are a testament to the valuable solutions we provide to our clients and our creative and quality-focused approach in our projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End .content-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="{{ url_for('static', filename='img/Statisticians/John_Tukey.jpg') }}"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>John Tukey</h3>
+                  
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    The best thing about being a statistician is you get to play in everyone's backyard.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="{{ url_for('static', filename='img/Statisticians/W._Edwards_Deming.jpg') }}"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>W. Edwards Deming</h3>
+                 
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    In God we trust. All others must bring data.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="{{ url_for('static', filename='img/Statisticians/Coase_scan_11_edited.jpg') }}"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Ronald Coase</h3>
+                  
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    If you torture the data long enough, it will confess to anything.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="{{ url_for('static', filename='img/Statisticians/H.G._Wells_by_Beresford.jpg') }}"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>H.G. Wells</h3>
+                  
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="{{ url_for('static', filename='img/Statisticians/Karl_Pearson,_1912.jpg') }}"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Karl Pearson</h3>
+                  
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Statistics is the grammar of science.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Check our Team</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img
+                    src="{{ url_for('static', filename='Gif/fukko.jpeg') }}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href="https://www.instagram.com/furkan.atasert/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/furkan-atasert-33477b1a1?original_referer=https%3A%2F%2Fl.instagram.com%2F"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Furkan Atasert</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img
+                    src="{{ url_for('static', filename='Gif/fatma.jpg') }}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href="https://www.instagram.com/furkan.atasert/"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                    <a
+                      href="https://tr.linkedin.com/in/furkan-atasert-33477b1a1"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Fatma Sayar</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Team Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </div>
+
+          <div>
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>
+                    Ondokuz Mayıs Üniversitesi, Körfez, Ondokuz Mayıs Ünv, 55270
+                    Atakum/Samsun
+                  </p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <a href="mailto: furkanatasert.is@gmail.com"
+                    ><p>furkanatasert.is@gmail.com</p></a
+                  >
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <a href="tel:+905387759908"><p>+90 (538) 775 9908</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>DATA<span>CHORUS</span></h3>
+                <p>
+                  Ondokuz Mayıs Üniversitesi, Körfez, Ondokuz Mayıs Ünv, 55270
+                  Atakum/Samsun<br /><br />
+                  <strong>Phone:</strong> +90 538 7759908<br />
+                  <strong>Email:</strong> furkanatasert.is@gmail.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/furkan.atasert/"
+                    class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="bx bxl-skype"></i
+                  ></a>
+                  <a
+                    href="https://tr.linkedin.com/in/furkan-atasert-33477b1a1"
+                    class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Analysis</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Please do not hesitate to contact us for any questions,
+                comments, or suggestions. Our mission is to enhance your
+                experience by providing the most up-to-date and accurate
+                information. Once again, thank you for your visit, and we look
+                forward to serving you again soon.Best regards,
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>DataChorus</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Powered by <a href="#">DataChorus</a></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

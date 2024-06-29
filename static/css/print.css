@@ -1,0 +1,98 @@
+.print-title {
+  display: none;
+}
+
+/* @page {
+  size: landscape;
+} */
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  body {
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+  }
+  .print-title,
+  .print-title * {
+    visibility: visible;
+  }
+  .print-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: black;
+    color: #ffc107;
+  }
+  #graphics,
+  #graphics * {
+    visibility: visible;
+  }
+  #graphics {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #outputArea,
+  #outputArea * {
+    visibility: visible;
+  }
+  #outputArea {
+    top: 0;
+    left: 0;
+    position: sticky;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+  #numericOutputArea,
+  #numericOutputArea * {
+    visibility: visible;
+  }
+  #numericOutputArea {
+    
+    
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* veya belirli bir piksel değeri */
+    height: 80%;
+  }
+  
+  #categoricalOutputArea,
+  #categoricalOutputArea * {
+    visibility: visible;
+  }
+  #categoricalOutputArea {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #histogram,
+  #histogram * {
+    visibility: visible;
+  }
+  #qqPlot,
+  #qqPlot * {
+    visibility: visible;
+  }
+  #pie,
+  #pie * {
+    visibility: visible;
+  }
+}
